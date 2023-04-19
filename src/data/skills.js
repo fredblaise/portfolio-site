@@ -23,4 +23,7 @@ export default [
     {
         title: 'Communication',
     },
+    {
+        title: 'Emails',
+    },
 ]
