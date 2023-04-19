@@ -20,10 +20,4 @@ export default [
     {
         title: 'Documentation',
     },
-    {
-        title: 'Communication',
-    },
-    {
-        title: 'Emails',
-    },
 ]
