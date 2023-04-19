@@ -20,4 +20,7 @@ export default [
     {
         title: 'Documentation',
     },
+    {
+        title: 'Communication',
+    },
 ]
