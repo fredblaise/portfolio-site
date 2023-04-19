@@ -9,7 +9,7 @@ export default [
         title: 'Version Control',
     },
     {
-        title: 'Continuous Integration / Continuous Deployment',
+        title: 'CI / CD',
     },
     {
         title: 'Professional Scrum Master I',
