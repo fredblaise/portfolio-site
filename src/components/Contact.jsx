@@ -1,28 +1,40 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import Title from './Title';
 
-function Contact() {
-   return (
+const Contact = () => {
+const form = useRef();
 
+   const sendEmail = (e) => {
+      e.preventDefault();
+
+      emailjs.sendForm('service_tskl8ji', 'template_vh2u0j8', form.current, 'Mgw8Bv66AlJCoXXWT')
+         .then((result) => {
+            console.log(result.text);
+            alert("The email was sent succesfully.");
+         }, (error) => {
+            console.log(error.text);
+            alert("The email failed to send. Please try again.");
+         });
+
+      form.current.reset();
+   };
+
+   return (
       <div className="flex flex-col mb-10 mx-auto">
-         <div className="flex justify-center items-center">
-            <form
-               action="https://getform.io/f/57b6ec77-f636-4571-b7dd-673518ef1327"
-               method="POST"
-               className="flex flex-col w-full md:w-7/12"
-               target="_blank"
-            >
+         <div className="flex flex-col">
+            <form ref={form} onSubmit={sendEmail} className="flex flex-col w-full md:w-7/12 m-auto">
                <Title>Contact</Title>
                <input
                   type="text"
-                  name="name"
-                  placeholder="Name"
+                  name="user_name"
+                  placeholder='Name'
                   className="p-2 bg-transparent border-2 rounded-lg border-stone-900 dark:border-white focus:outline-none"
                   required
                />
                <input
-                  type="text"
-                  name="email"
+                  type="email"
+                  name="user_email"
                   placeholder="Email"
                   className="my-2 p-2 bg-transparent border-2 rounded-lg border-stone-900 dark:border-white focus:outline-none"
                   required
@@ -36,14 +48,13 @@ function Contact() {
                />
                <button
                   type="submit"
-                  className="text-center inline-block px-8 py-3 w-max text-base font-medium dark:text-white border-2 hover:scale-105 border-stone-900 dark:border-white rounded-lg"
-               >
-                  Send
+                  className="text-center inline-block px-8 py-3 w-max text-base font-medium dark:text-white border-2 active:scale-95 border-stone-900 dark:border-white rounded-lg">
+                     Send
                </button>
             </form>
          </div>
       </div>
-   )
-}
+   );
+};
 
 export default Contact;
