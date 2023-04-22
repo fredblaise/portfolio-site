@@ -9,9 +9,9 @@ function TimelineItem({ year, title, details }) {
                <span className="inline-block px-2 py-1 font-semibold text-white dark:text-stone-900 bg-stone-900 dark:bg-white rounded-md">
                   {year}
                </span>
-               <h3 className="text-lg font-semibold text-stone-900 dark:text-white">
+               <span className="text-lg font-semibold text-stone-900 dark:text-white">
                   {title}
-               </h3>
+               </span>
             </p>
             <p className="my-2 text-base font-normal text-stone-500 dark:text-stone-400">
                {details}
