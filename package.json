@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "homepage": "https://fredblaise.com",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "react": "^18.2.0",
