@@ -1,7 +1,7 @@
 export default [
    {
       title: 'Notes App',
-      imgUrl: '/notes-app-background.png',
+      imgUrl: '/assets/notes-app-background.png',
       stack: ['React', 'Tailwind', 'Headless UI', 'Vite'],
       link: 'https://notes.fredblaise.com',
       details: '',
