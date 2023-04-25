@@ -1,10 +1,10 @@
 export default [
    {
-      title: 'Project 1',
-      imgUrl: 'http://via.placeholder.com/640x360',
-      stack: ['HTML', 'CSS', 'JavaScript'],
-      link: 'https://google.com',
-      details: 'This is the description for the portfolio item.',
+      title: 'Notes App',
+      imgUrl: 'public/assets/notes-app.png',
+      stack: ['React', 'Tailwind', 'Headless UI', 'Vite'],
+      link: 'https://notes.fredblaise.com',
+      details: '',
    },
    {
       title: 'Project 2',
