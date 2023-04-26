@@ -7,11 +7,11 @@ export default [
       details: '',
    },
    {
-      title: 'Project 2',
-      imgUrl: 'https://via.placeholder.com/640x360',
+      title: 'Trivia App',
+      imgUrl: '/assets/trivia-app.png',
       stack: ['React', 'Tailwind', 'Vite'],
-      link: 'https://google.com',
-      details: 'This is the description for the portfolio item.',
+      link: 'https://trivia.fredblaise.com',
+      details: '',
    },
    {
       title: 'Project 3',
