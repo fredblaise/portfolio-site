@@ -1,5 +1,12 @@
 export default [
    {
+      title: 'Django To-Do App',
+      imgUrl: '/assets/todo-app.jpeg',
+      stack: ['Python', 'Django', 'Bootstrap'],
+      link: 'https://todo-app-production-e6e6.up.railway.app/',
+      details: '',
+   },
+   {
       title: 'Notes App',
       imgUrl: '/assets/notes-app-background.png',
       stack: ['React', 'Tailwind', 'Headless UI', 'Vite'],
@@ -12,12 +19,5 @@ export default [
       stack: ['React', 'Tailwind', 'Vite'],
       link: 'https://trivia.fredblaise.com',
       details: '',
-   },
-   {
-      title: 'Project 3',
-      imgUrl: 'https://via.placeholder.com/640x360',
-      stack: ['Python', 'C++', 'Robotics'],
-      link: 'https://google.com',
-      details: 'This is the description for the portfolio item.',
    },
 ]
