@@ -2,7 +2,7 @@ export default [
    {
       title: 'Django To-Do App',
       imgUrl: '/assets/todo-app.jpeg',
-      stack: ['Python', 'Django', 'Bootstrap'],
+      stack: ['Python', 'Django', 'PostgreSQL', 'Bootstrap'],
       link: 'https://todo-app-production-e6e6.up.railway.app/',
       details: '',
    },
