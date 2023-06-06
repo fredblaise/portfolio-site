@@ -13,7 +13,7 @@ function TimelineItem({ year, title, details }) {
                   {title}
                </span>
             </p>
-            <p className="my-2 text-base font-normal text-stone-500 dark:text-stone-400">
+            <p className="my-2 text-base font-normal text-stone-500 dark:text-stone-400 text-justify">
                {details}
             </p>
          </li>

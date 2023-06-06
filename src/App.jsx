@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Intro from './components/Intro';
-import Portfolio from './components/Portfolio';
+import About from './components/About';
+import Projects from './components/Projects';
 import Timeline from './components/Timeline';
-import Skills from './components/Skills';
+import Navbar from './components/Navbar';
 
 function App() {
 	// const [theme, setTheme] = useState(null);
@@ -28,19 +29,20 @@ function App() {
 	// 		document.documentElement.classList.remove('dark');
 	// 	}
 	// }, [theme]);
+
 	return (
-		<>
-			<div className="text-stone-900 dark:text-stone-300 min-h-screen font-inter">
-				<div className="max-w-5xl w-11/12 mx-auto">
-					<Intro />
-					<Portfolio />
-					<Skills />
-					<Timeline />
-					<Contact />
-					<Footer />
-				</div>
-			</div>
-		</>
+		<div className="max-w-5xl w-11/12 m-auto text-stone-900 dark:text-stone-300 min-h-screen font-inter">
+			<Navbar />
+			<BrowserRouter>
+				<Routes>
+					<Route path='/' element={<About />} />
+					<Route path='/projects' element={<Projects />} />
+					<Route path='/timeline' element={<Timeline />} />
+					<Route path='/contact' element={<Contact />} />
+				</Routes>
+			</BrowserRouter>
+			<Footer />
+		</div>
 	)
 }
 

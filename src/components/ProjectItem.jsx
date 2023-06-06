@@ -6,7 +6,7 @@ function PortfolioItem({ i, title, imgUrl, stack, link, details }) {
          href={link}
          target="_blank"
          rel="noopener noreferrer"
-         className="border-2 border-stone-900 dark:border-white lg:hover:scale-105 active:scale-95 rounded-md overflow-hidden"
+         className="border-2 border-stone-900 dark:border-white transition lg:hover:scale-105 active:scale-95 rounded-md overflow-hidden"
       >
          <img
             src={imgUrl}
