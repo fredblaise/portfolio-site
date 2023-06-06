@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import About from './components/About';
@@ -33,14 +33,12 @@ function App() {
 	return (
 		<div className="max-w-5xl w-11/12 m-auto text-stone-900 dark:text-stone-300 min-h-screen font-inter">
 			<Navbar />
-			<BrowserRouter>
-				<Routes>
-					<Route exact path='/' element={<About />} />
-					<Route path='/projects' element={<Projects />} />
-					<Route path='/timeline' element={<Timeline />} />
-					<Route path='/contact' element={<Contact />} />
-				</Routes>
-			</BrowserRouter>
+			<Routes>
+				<Route exact path='/' element={<About />} />
+				<Route path='/projects' element={<Projects />} />
+				<Route path='/timeline' element={<Timeline />} />
+				<Route path='/contact' element={<Contact />} />
+			</Routes>
 			<Footer />
 		</div>
 	)
