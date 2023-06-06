@@ -35,7 +35,7 @@ function App() {
 			<Navbar />
 			<BrowserRouter>
 				<Routes>
-					<Route path='/' element={<About />} />
+					<Route exact path='/' element={<About />} />
 					<Route path='/projects' element={<Projects />} />
 					<Route path='/timeline' element={<Timeline />} />
 					<Route path='/contact' element={<Contact />} />
