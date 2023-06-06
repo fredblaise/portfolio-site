@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -21,10 +22,10 @@ const Navbar = () => {
                     </button>
                 </div>
                 <nav className={`${menuOpen ? 'flex flex-col' : 'hidden'} md:flex md:flex-row gap-4 font-medium text-gray-800`}>
-                    <a href="/" className="rounded flex items-center ml-auto dark:text-white">About</a>
-                    <a href="/projects" className="rounded flex items-center ml-auto dark:text-white">Projects</a>
-                    <a href="/timeline" className="rounded flex items-center ml-auto dark:text-white">Timeline</a>
-                    <a href="/contact" className="rounded flex items-center ml-auto dark:text-white">Contact</a>
+                    <Link to="/" className="rounded flex items-center ml-auto dark:text-white">About</Link>
+                    <Link to="/projects" className="rounded flex items-center ml-auto dark:text-white">Projects</Link>
+                    <Link to="/timeline" className="rounded flex items-center ml-auto dark:text-white">Timeline</Link>
+                    <Link to="/contact" className="rounded flex items-center ml-auto dark:text-white">Contact</Link>
                 </nav>
             </div>
         </header>
