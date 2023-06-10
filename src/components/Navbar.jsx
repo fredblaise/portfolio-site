@@ -23,9 +23,9 @@ const Navbar = () => {
                 </div>
                 <nav className={`${menuOpen ? 'flex flex-col' : 'hidden'} md:flex md:flex-row gap-4 font-medium text-gray-800`}>
                     <Link to="/" className="rounded flex items-center ml-auto dark:text-white">About</Link>
-                    <Link to="/#/projects" className="rounded flex items-center ml-auto dark:text-white">Projects</Link>
-                    <Link to="/#/timeline" className="rounded flex items-center ml-auto dark:text-white">Timeline</Link>
-                    <Link to="/#/contact" className="rounded flex items-center ml-auto dark:text-white">Contact</Link>
+                    <Link to="/projects" className="rounded flex items-center ml-auto dark:text-white">Projects</Link>
+                    <Link to="/timeline" className="rounded flex items-center ml-auto dark:text-white">Timeline</Link>
+                    <Link to="/contact" className="rounded flex items-center ml-auto dark:text-white">Contact</Link>
                 </nav>
             </div>
         </header>
