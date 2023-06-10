@@ -1,7 +1,7 @@
 import React from 'react';
 import projects from '../data/projects';
-import ProjectItem from './ProjectItem';
-import Title from './Title';
+import ProjectItem from '../components/ProjectItem';
+import Title from '../components/Title';
 
 function Projects() {
    return (

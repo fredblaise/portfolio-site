@@ -1,5 +1,5 @@
 import React from 'react';
-import Skills from './Skills';
+import Skills from '../components/Skills';
 
 function About() {
    return (

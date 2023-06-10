@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Contact from './components/Contact';
+import Contact from './pages/Contact';
 import Footer from './components/Footer';
-import About from './components/About';
-import Projects from './components/Projects';
-import Timeline from './components/Timeline';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Timeline from './pages/Timeline';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -35,9 +35,9 @@ function App() {
 			<Navbar />
 			<Routes>
 				<Route exact path='/' element={<About />} />
-				<Route path='/projects' element={<Projects />} />
-				<Route path='/timeline' element={<Timeline />} />
-				<Route path='/contact' element={<Contact />} />
+				<Route path='/#/projects' element={<Projects />} />
+				<Route path='/#/timeline' element={<Timeline />} />
+				<Route path='/#/contact' element={<Contact />} />
 			</Routes>
 			<Footer />
 		</div>
