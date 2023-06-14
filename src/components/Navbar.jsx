@@ -10,11 +10,9 @@ const Navbar = () => {
 
     return (
         <header>
-            <div className="mx-auto flex flex-col gap-4 md:flex-row max-w-7xl justify-between p-4">
+            <div className="mx-auto flex flex-col gap-4 py-4 md:flex-row max-w-7xl justify-between">
                 <div className="flex justify-between gap-2">
-                    <a href="/" className="flex dark:text-white text-4xl [font-family:'Pacifico',cursive;]">
-                        FB
-                    </a>
+                    <Link to="/" className="flex dark:text-white text-4xl [font-family:'Pacifico',cursive;]">FB</Link>
                     <button className="flex appearance-none p-1 text-gray-500 md:hidden" onClick={handleMenu}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />

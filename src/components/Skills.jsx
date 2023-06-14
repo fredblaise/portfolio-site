@@ -5,7 +5,7 @@ import Title from './Title';
 
 function Skills() {
     return (
-        <div className="flex flex-col w-full md:w-7/12 mx-auto justify-center">
+        <div className="flex flex-col w-full max-w-xl mx-auto justify-center">
             <Title>Skills</Title>
             <div className="flex flex-wrap gap-4 justify-start" >
                 {skills.map((item, i) => (

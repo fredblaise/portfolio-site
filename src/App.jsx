@@ -31,7 +31,7 @@ function App() {
 	// }, [theme]);
 
 	return (
-		<div className="max-w-5xl w-11/12 m-auto text-stone-900 dark:text-stone-300 min-h-screen font-inter">
+		<div className="max-w-4xl w-full m-auto max-lg:p-4 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
 			<Navbar />
 			<Routes>
 				<Route exact path='/' element={<About />} />
